@@ -643,6 +643,8 @@ Check:
 
 The Red Team simulates a realistic attacker while maintaining strict engagement boundaries.
 
+> **Atomic Red Team Framework:** For unit-level technique execution, telemetry validation, and MITRE ATT&CK detection testing, refer to the dedicated [Atomic Red Team Workstream](docs/redteam/README.md) documentation (`docs/redteam/`).
+
 ## Phase 1 - Recon
 
 Identify:
@@ -890,6 +892,23 @@ Primary responsibility:
 - Attack timeline
 - Adversary narrative
 - Cleanup and post-operation validation
+
+### Atomic Red Team Workstream
+
+**Owner:** Alakati Rithesh Chandra  
+**Branch:** `feature/redteam-atomic`  
+**Documentation:** [`docs/redteam/`](docs/redteam/README.md)
+
+Primary responsibility:
+
+- Curate and maintain the Atomic Red Team test catalog aligned with CyGRC endpoints and MITRE ATT&CK.
+- Map adversarial techniques to defensive telemetry sources (Windows Event 4688, Sysmon, PowerShell 4104).
+- Execute controlled single-technique unit tests in authorized environments following the [Execution Guide](docs/redteam/execution-guide.md).
+- Capture cryptographic execution evidence and sanitize repository outputs ([Evidence Index](docs/redteam/evidence-index.md)).
+- Verify defensive detection outcomes (differentiating command success from security detection).
+- Document and verify complete system restoration and artifact cleanup ([Cleanup Checklist](docs/redteam/cleanup-checklist.md)).
+- Deliver workstream completion documentation ([Completion Report](docs/redteam/completion-report.md)).
+- Submit all workstream enhancements via Pull Requests to `main`.
 
 ## Shared Responsibilities
 
