@@ -70,20 +70,3 @@ These detections occurred during the recorded test window. The documented
 Test 11 commands do not reference these files, so causation has not been
 established. They are recorded as separate Defender findings.
 Further Atomic testing is paused pending review.
-
-## Additional Defender Findings
-
-- Log: Microsoft-Windows-Windows Defender/Operational
-- Event IDs: 1116 (detection), 1117 (remediation)
-- Detection 1: Trojan:Script/Wacatac.H!ml
-- Resource: T1059.001/src/Invoke-DownloadCradle.ps1
-- Detection 2: VirTool:MSIL/SoapHound!rfn
-- Resource: T1059.001/bin/SOAPHound.exe
-- Remediation: Defender reported quarantine successful for both files.
-- ActionSuccess: True for both resources in Get-MpThreatDetection.
-- Evidence: RT-AT-001-defender-findings.txt (stored outside the repository).
-
-These detections occurred during the recorded test window. The documented
-Test 11 commands do not reference these files, so causation has not been
-established. They are recorded as separate Defender findings.
-Further Atomic testing is paused pending review.

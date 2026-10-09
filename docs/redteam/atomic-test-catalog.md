@@ -21,7 +21,7 @@
 | Execution evidence | Stored outside repository |
 | Cleanup status | PASS |
 | Telemetry status | NOT OBSERVED by the targeted query |
-| Detection status | NOT CHECKED |
+| Detection status | INCOMPLETE - intended activity detection not confirmed |
 | Reviewer status | Pending |
 
 ## Findings
