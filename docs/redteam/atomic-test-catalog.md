@@ -60,3 +60,37 @@
 - CLEANED: Cleanup completed and the documented restoration checks passed.
 
 A successful command alone does not prove that a security detection worked.
+
+## Workstream Deliverables
+
+| Deliverable | Location | Purpose |
+|---|---|---|
+| Atomic test catalog | `docs/redteam/atomic-test-catalog.md` | Inventory and status of approved tests |
+| Execution record template | `docs/redteam/templates/execution-record.md` | Standardized authorization, execution, and validation records |
+| Cleanup checklist | `docs/redteam/templates/cleanup-checklist.md` | Reusable cleanup and restoration verification |
+| ATT&CK technique mapping | `docs/redteam/attack-technique-mapping.md` | Maps tests to ATT&CK techniques and validation outcomes |
+| Evidence index | `docs/redteam/evidence-index.md` | Central index of execution and validation evidence |
+| Engagement scope | `docs/redteam/engagement-scope.md` | Scope, authorization, and outstanding approvals |
+
+## End-to-End Record Lifecycle
+
+1. **Authorize:** Confirm the approved environment, target, test, and testing window.
+2. **Prepare:** Review the Atomic test definition, prerequisites, expected behavior, and cleanup procedure.
+3. **Execute:** Run only the approved test and record exact commands, timestamps, exit codes, outputs, and errors.
+4. **Map:** Link the observed behavior to the relevant ATT&CK technique.
+5. **Validate:** Assess event generation, event collection, security detection, and alerting separately.
+6. **Clean up:** Remove approved test-created artifacts and document restoration checks and residual artifacts.
+7. **Review:** Link the evidence, record limitations, obtain reviewer decisions, and document follow-up actions.
+
+## Current Workstream Gate
+
+- RT-AT-001 execution: PASS.
+- Temporary-file cleanup: PASS for the checked file only.
+- Test-specific telemetry: NOT OBSERVED by the targeted query.
+- Detection validation: INCOMPLETE.
+- Defender findings: Awaiting team-lead review.
+- Engagement authorization: Pending confirmation.
+- Further Atomic execution: PAUSED pending review and approval.
+
+Do not interpret successful execution or temporary-file removal as proof
+of successful detection or complete system restoration.
